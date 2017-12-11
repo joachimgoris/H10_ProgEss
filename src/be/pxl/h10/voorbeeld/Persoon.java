@@ -30,4 +30,9 @@ public class Persoon {
 	public void setVoornaam(String voornaam) {
 		this.voornaam = voornaam;
 	}
+	
+	public String print() {
+		String retvalue = voornaam+" "+naam;
+		return retvalue;
+	}
 }
