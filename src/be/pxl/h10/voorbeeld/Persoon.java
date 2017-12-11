@@ -1,8 +1,8 @@
 package be.pxl.h10.voorbeeld;
 
 public class Persoon {
-	private String naam;
-	private String voornaam;
+	protected String naam;
+	protected String voornaam;
 	
 	//Constructors
 	public Persoon() {
