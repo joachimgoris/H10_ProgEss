@@ -11,7 +11,14 @@ public class Lector extends Persoon {
 		setPersoneelsNr(p);
 		setAanstellingsPercentage(a);
 		salaris = s;
-		
+	}
+	
+	public Lector(String n, String v, double a, double s) {
+		this(n,v,"20009999",a,s);
+	}
+	
+	public Lector() {
+		this("onbekend","onbekend","20009999",2000,1);
 	}
 	
 	public String getPersoneelsNr() {

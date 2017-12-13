@@ -26,6 +26,7 @@ public class SchoolApp {
 		System.out.println(s1.getStudentNr()+" "+s1.getOpleiding());
 		
 		System.out.println(p1.print());
+		System.out.println(Persoon.getAantal());
 	}
 
 }

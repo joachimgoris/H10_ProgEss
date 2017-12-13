@@ -3,6 +3,11 @@ package be.pxl.h10.voorbeeld;
 public class Persoon {
 	protected String naam;
 	protected String voornaam;
+	private static int aantal;
+	
+	{
+		aantal++;
+	}
 	
 	//Constructors
 	public Persoon() {
@@ -34,5 +39,9 @@ public class Persoon {
 	public String print() {
 		String retvalue = voornaam+" "+naam;
 		return retvalue;
+	}
+
+	public static int getAantal() {
+		return aantal;
 	}
 }

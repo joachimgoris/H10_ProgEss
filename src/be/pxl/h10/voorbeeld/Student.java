@@ -5,6 +5,25 @@ public class Student extends Persoon {
 	private String StudentNr;
 	private String Opleiding;
 	
+	public Student() {
+		this("Onbekend","Onbekend");
+	}
+	
+	public Student(String n, String v) {
+		this(n,v,"15999999","XXX");
+	}
+	
+	public Student(String n, String v, String nr, String o) {
+		setNaam(n);
+		setVoornaam(v);
+		setStudentNr(nr);
+		setOpleiding(o);
+	}
+	
+	public Student(Student s) {
+		this(s.getNaam(),s.getVoornaam(),s.getStudentNr(),s.getOpleiding());
+	}
+	
 	public void printStudent() {
 		System.out.println(voornaam +" "+ naam);
 	}
