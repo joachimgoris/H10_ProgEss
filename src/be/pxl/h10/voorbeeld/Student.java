@@ -5,6 +5,10 @@ public class Student extends Persoon {
 	private String StudentNr;
 	private String Opleiding;
 	
+	{
+		aantal++;
+	}
+	
 	public Student() {
 		this("Onbekend","Onbekend");
 	}

@@ -3,7 +3,7 @@ package be.pxl.h10.voorbeeld;
 public class Persoon {
 	protected String naam;
 	protected String voornaam;
-	private static int aantal;
+	protected static int aantal;
 	
 	{
 		aantal++;
