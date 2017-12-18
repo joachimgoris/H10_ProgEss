@@ -26,4 +26,19 @@ public class Circle extends Shape{
 		return 2*Radius*Math.PI;
 	}
 	
+	public boolean equals(Object o) {
+		if(o != null
+				&& o.getClass() == this.getClass()) {
+			Circle circle = (Circle) o;
+			if(circle.getRadius() == this.getRadius()
+				&& circle.getX() == this.getX()
+				&& circle.getY() == this.getY()) {
+			return true;
+			}
+		}
+		else {
+			return false;
+		}
+	}
+	
 }
