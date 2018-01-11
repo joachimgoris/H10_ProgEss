@@ -27,18 +27,20 @@ public class Circle extends Shape{
 	}
 	
 	public boolean equals(Object o) {
+		boolean retvalue = false;
 		if(o != null
 				&& o.getClass() == this.getClass()) {
 			Circle circle = (Circle) o;
 			if(circle.getRadius() == this.getRadius()
 				&& circle.getX() == this.getX()
 				&& circle.getY() == this.getY()) {
-			return true;
+			retvalue = true;
 			}
 		}
 		else {
-			return false;
+			retvalue = false;
 		}
+		return retvalue;
 	}
 	
 }
